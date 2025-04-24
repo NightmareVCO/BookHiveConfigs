@@ -1,0 +1,15 @@
+server.port=0
+
+#zipkin
+spring.zipkin.base-url=http://localhost:9411
+management.tracing.sampling.probability=1.0
+
+eureka.instance.instance-id=${spring.application.name}:${server.port}:${random.uuid}
+eureka.client.fetch-registry=true
+eureka.client.register-with-eureka=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+resend.api.key=re_aHz6V5ca_HAMsYKj1cB7mDASSCiAmFJJ2
+application.main-page-url=http://localhost:8080\
+
+gateway.secret=rnOyWCjXX4i8yq0CCM8=
